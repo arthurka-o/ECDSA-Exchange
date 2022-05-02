@@ -5,6 +5,7 @@
     <script type="module" src="index.js"></script>
   </head>
   <body>
+    <label id="errors"></label>
     <div class="components">
       <div class="wallet">
         <h1> Your Wallet </h1>
@@ -18,9 +19,14 @@
         <h1> Send Amount </h1>
         <input type="text" id="send-amount" placeholder="Send Amount" />
         <input type="text" id="recipient" placeholder="Recipient" />
+        <input type="text" id="private-key" placeholder="Private Key" />
+        <div class="button" id="sign-message">
+          Generate Signature
+        </div>
         <div class="button" id="transfer-amount">
           Transfer Amount
         </div>
+        <label id="signature"></label>
       </div>
     </div>
   </body>
